@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Tracker</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <header>
+        <h1>Task Tracker</h1>
+    </header>
+    <main>
+        <section aria-labelledby="add-task-heading">
+            <h2 id="add-task-heading">Add Task</h2>
+            <form id="task-form">
+                <div class="form-group">
+                    <label for="title">Title<span aria-hidden="true"> *</span></label>
+                    <input type="text" id="title" name="title" required autocomplete="off">
+                </div>
+                <div class="form-group">
+                    <label for="description">Description</label>
+                    <textarea id="description" name="description" rows="3"></textarea>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="priority">Priority</label>
+                        <select id="priority" name="priority">
+                            <option value="low">Low</option>
+                            <option value="medium" selected>Medium</option>
+                            <option value="high">High</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="due_date">Due Date</label>
+                        <input type="date" id="due_date" name="due_date">
+                    </div>
+                </div>
+                <button type="submit">Add Task</button>
+            </form>
+        </section>
+        <section aria-labelledby="task-list-heading">
+            <h2 id="task-list-heading">Tasks</h2>
+            <ul id="task-list" aria-live="polite"></ul>
+        </section>
+    </main>
+    <script src="/static/app.js"></script>
+</body>
+</html>
