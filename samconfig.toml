@@ -1,0 +1,7 @@
+[default.deploy.parameters]
+stack_name = "task-tracker"
+resolve_s3 = true
+s3_prefix = "task-tracker"
+region = "us-east-1"
+capabilities = "CAPABILITY_IAM"
+confirm_changeset = true
