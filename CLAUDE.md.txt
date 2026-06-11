@@ -1,0 +1,11 @@
+# Task Tracker - project conventions
+
+- Use python3 with a virtual environment at .venv for the app's dependencies; run the app and tests from that .venv, not system Python.
+- Backend: Flask with SQLite via the standard-library sqlite3 module (no ORM).
+- Keep route handlers thin; put data access in a separate module.
+- Validate and sanitize all request input.
+- Tests: pytest.
+- Frontend: vanilla HTML, CSS, and JavaScript, no frameworks or build tools. Make the UI clean, modern, and visually appealing: a cohesive color palette, readable typography, generous spacing, a clear visual hierarchy, and subtle hover and transition states.
+- Accessibility: use semantic HTML landmarks, label every form control, meet WCAG AA color contrast, support full keyboard navigation, and show a visible focus indicator on every interactive element.
+- Commit to Git after each significant change (for example, after the backend, after the frontend, and after each review) with a short, descriptive message.
+'@, (New-Object System.Text.UTF8Encoding $false))
